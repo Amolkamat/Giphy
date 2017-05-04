@@ -4,7 +4,6 @@ $(document).ready(function() {
     // Function that displays all gif buttons
     function displayGifButtons() {
         $("#gifButtonsView").empty();
-        // erasing anything in this div id so that it doesnt duplicate the results
         for (var i = 0; i < actions.length; i++) {
             var gifButton = $("<button>");
             gifButton.addClass("action");
@@ -40,7 +39,7 @@ $(document).ready(function() {
     function displayGifs() {
         var action = $(this).attr("data-name");
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + action + "&api_key=dc6zaTOxFJmzC&limit=10";
-        console.log(queryURL); // displays the constructed url
+        console.log(queryURL); 
         $.ajax({
             url: queryURL,
             method: 'GET'
@@ -67,7 +66,6 @@ $(document).ready(function() {
                 gifImage.attr("data-state", "still");
                 gifImage.addClass("image");
                 gifDiv.append(gifImage);
-                // pulling still image of gif
                 // adding div of gifs to gifsView div
                 $("#gifsView").prepend(gifDiv);
             }

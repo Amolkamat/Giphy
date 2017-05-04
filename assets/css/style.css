@@ -1,0 +1,35 @@
+body{
+	background: url("https://pixabay.com/p-1330252/?no_redirect");
+	background-size: 100%;
+    background-repeat: no-repeat;
+    color: black;
+}
+* {
+	box-sizing: border-box;
+}
+img { 
+    height: 155px;
+    width: 155px;
+}
+.btn {
+    /* adding spacing between each button*/
+    margin: 3px;
+    background-color: #0099ff;
+    border-color: #fff;
+}
+.gifDiv{
+   
+    float: left;
+    margin: 3px;
+}
+.container {
+	background-color: #fff;
+	opacity: 0.8;
+	padding: 20px;
+}
+.jumbotron {
+    background-color: inherit;
+}
+.jumbotron .h1, .jumbotron h1 {
+    text-align: center;
+}
